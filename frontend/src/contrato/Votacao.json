@@ -1,0 +1,313 @@
+{
+  "endereco": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "chainId": 31337,
+  "rede": "localhost",
+  "blocoPublicacao": 1,
+  "administrador": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "publicadoEm": "2026-10-22T14:56:07.402Z",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ApenasAdministrador",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CandidatoInexistente",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EleitorJaRegistado",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EleitorNaoRegistado",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EnderecoInvalido",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "JaVotou",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NomeInvalido",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VotacaoEmCurso",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VotacaoFechada",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "idCandidato",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "nome",
+          "type": "string"
+        }
+      ],
+      "name": "CandidatoAdicionado",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "eleitor",
+          "type": "address"
+        }
+      ],
+      "name": "EleitorRegistado",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "aberta",
+          "type": "bool"
+        }
+      ],
+      "name": "EstadoVotacaoAlterado",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "eleitor",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "idCandidato",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "dataHora",
+          "type": "uint256"
+        }
+      ],
+      "name": "VotoRegistado",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "nome",
+          "type": "string"
+        }
+      ],
+      "name": "adicionarCandidato",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "administrador",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "candidatos",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "nome",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "votos",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "aberta",
+          "type": "bool"
+        }
+      ],
+      "name": "definirVotacaoAberta",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "eleitores",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "registado",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "votou",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "obterCandidatos",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "nomes",
+          "type": "string[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "votos",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "obterNumeroCandidatos",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "eleitor",
+          "type": "address"
+        }
+      ],
+      "name": "registarEleitor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalEleitores",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalVotos",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "votacaoAberta",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "idCandidato",
+          "type": "uint256"
+        }
+      ],
+      "name": "votar",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}

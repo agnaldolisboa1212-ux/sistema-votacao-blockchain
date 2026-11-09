@@ -1,0 +1,6 @@
+.venv/
+relatorios/
+.env
+__pycache__/
+*.pyc
+dados_teste.csv

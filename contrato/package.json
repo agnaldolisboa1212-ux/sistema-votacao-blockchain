@@ -1,0 +1,19 @@
+{
+  "name": "votacao-contrato",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contrato inteligente Votacao (Solidity) com Hardhat",
+  "scripts": {
+    "compilar": "hardhat compile",
+    "testar": "hardhat test",
+    "node": "hardhat node",
+    "publicar:local": "hardhat run scripts/publicar.js --network localhost",
+    "publicar:sepolia": "hardhat run scripts/publicar.js --network sepolia",
+    "demo:local": "hardhat run scripts/preparar-demo.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "dotenv": "^18.0.8",
+    "hardhat": "^2.29.1"
+  }
+}

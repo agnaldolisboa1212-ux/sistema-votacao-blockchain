@@ -1,0 +1,8 @@
+node_modules
+.env
+cache
+artifacts
+coverage
+typechain-types
+publicacoes/localhost.json
+hardhat-node*.log

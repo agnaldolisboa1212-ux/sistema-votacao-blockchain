@@ -1,0 +1,22 @@
+# Segredos e configuracao local (os .env.example sao versionados)
+.env
+.env.*
+!.env.example
+
+# Dependencias e artefactos de build
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+
+# Logs e relatorios gerados
+*.log
+analise/relatorios/
+
+# Ferramentas locais
+.claude/
+
+# Documento de especificacao original (nao publicado)
+*.docx
+~$*

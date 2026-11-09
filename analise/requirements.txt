@@ -1,0 +1,6 @@
+# Dependências do módulo de análise (versões mínimas)
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.26
+pymysql>=1.1
+python-dotenv>=1.0

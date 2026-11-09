@@ -1,0 +1,26 @@
+{
+  "name": "votacao-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend do sistema de votação eletrónica estudantil em blockchain (autenticação, habilitação de carteiras e sincronização de eventos)",
+  "type": "module",
+  "main": "src/servidor.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "iniciar": "node src/servidor.js",
+    "dev": "node --watch src/servidor.js",
+    "bd:criar": "node scripts/criar-bd.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "ethers": "^6.17.0",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.6"
+  }
+}
